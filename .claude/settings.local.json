@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp /tmp/kek-env-backup /Users/marcigdd/Desktop/coding-other-work/kek-vonal-chat/.env)",
+      "Bash(cp /tmp/kek-claude-backup -r /Users/marcigdd/Desktop/coding-other-work/kek-vonal-chat/.claude)",
+      "Bash(cp -a /Users/marcigdd/Desktop/coding-other-work/kek-vonal-chat-tmp/. /Users/marcigdd/Desktop/coding-other-work/kek-vonal-chat/)",
+      "Bash(rm -rf /Users/marcigdd/Desktop/coding-other-work/kek-vonal-chat-tmp)",
+      "Bash(grep -v '\\\\.claude$')",
+      "Bash(xargs -I {} rm -rf \"/Users/marcigdd/Desktop/coding-other-work/kek-vonal-chat/{}\")",
+      "Bash(cp -a /tmp/ai-chatbot-template/. /Users/marcigdd/Desktop/coding-other-work/kek-vonal-chat/)",
+      "Bash(rm -rf /tmp/ai-chatbot-template)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm dev:*)",
+      "WebFetch(domain:openrouter.ai)",
+      "WebFetch(domain:sdk.vercel.ai)",
+      "WebFetch(domain:ai-sdk.dev)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:platform.openai.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:www.google.com)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)"
+    ]
+  }
+}
