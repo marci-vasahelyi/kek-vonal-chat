@@ -8,12 +8,8 @@ const MODELS = [
   { id: "deepseek/deepseek-v3.2", name: "DeepSeek V3.2", priceIn: 0.00000026, priceOut: 0.00000038 },
   { id: "openai/gpt-4.1-mini", name: "GPT-4.1 Mini", priceIn: 0.0000004, priceOut: 0.0000016 },
   { id: "google/gemini-3.1-flash-lite-preview", name: "Gemini 3.1 Flash Lite", priceIn: 0.00000025, priceOut: 0.0000015 },
-  { 
-  id: "qwen/qwen-turbo", 
-  name: "Qwen turbo", 
-  priceIn: 0.000000068,
-  priceOut: 0.00000015
-}
+  { id: "qwen/qwen-turbo", name: "Qwen Turbo", priceIn: 0.000000068, priceOut: 0.00000015 },
+  { id: "qwen/qwen3.5-35b-a3b", name: "Qwen 3.5 35B", priceIn: 0.0000001625, priceOut: 0.0000013 },
 ];
 
 const HUF_PER_USD = 335;

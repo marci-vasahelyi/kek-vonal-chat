@@ -9,7 +9,7 @@ const openrouter = createOpenAICompatible({
   },
 });
 
-const REASONING_DISABLED_MODELS = ["qwen/qwen-turbo"];
+const REASONING_DISABLED_MODELS = ["qwen/qwen-turbo", "qwen/qwen3.5-35b-a3b"];
 
 export async function POST(req: Request) {
   const { messages, model, systemPrompt } = await req.json();
