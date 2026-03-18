@@ -18,13 +18,12 @@ export async function POST(req: Request) {
   const disableReasoning = REASONING_DISABLED_MODELS.includes(selectedModel);
 
   const result = streamText({
-    model: openrouter.languageModel(selectedModel, {
-      ...(disableReasoning && {
-        extraBody: { reasoning: { effort: "none" } },
-      }),
-    }),
+    model: openrouter.languageModel(selectedModel),
     system: systemPrompt || "You are a helpful assistant. Be concise and clear.",
     messages,
+    ...(disableReasoning && {
+      providerOptions: { openrouter: { reasoning: { effort: "none" } } },
+    }),
   });
 
   return result.toDataStreamResponse();
